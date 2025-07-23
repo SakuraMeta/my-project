@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ - 運勢を占おう</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🎋 おみくじ 🎋</h1>
+            <p class="subtitle">今日のあなたの運勢は？</p>
+        </header>
+
+        <main class="main">
+            <div class="omikuji-box" id="omikujiBox">
+                <div class="omikuji-content" id="omikujiContent">
+                    <div class="initial-state">
+                        <div class="omikuji-icon">🏮</div>
+                        <p class="instruction">下のボタンを押して<br>おみくじを引いてください</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button class="draw-button" id="drawButton">
+                    <span class="button-text">おみくじを引く</span>
+                    <span class="button-icon">✨</span>
+                </button>
+            </div>
+
+            <div class="result-actions" id="resultActions" style="display: none;">
+                <button class="action-button reset-button" id="resetButton">
+                    もう一度引く
+                </button>
+                <button class="action-button share-button" id="shareButton">
+                    結果をシェア
+                </button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 おみくじWebサイト</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
