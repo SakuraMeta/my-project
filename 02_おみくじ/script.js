@@ -70,11 +70,11 @@ const fortuneData = {
 
 // DOM要素の取得
 const drawButton = document.getElementById('drawButton');
-const omikujiContent = document.getElementById('omikujiContent');
-const resultActions = document.getElementById('resultActions');
 const resetButton = document.getElementById('resetButton');
 const shareButton = document.getElementById('shareButton');
 const omikujiBox = document.getElementById('omikujiBox');
+const omikujiContent = document.getElementById('omikujiContent');
+const resultActions = document.getElementById('resultActions');
 const videoContainer = document.getElementById('videoContainer');
 const daikichiVideo = document.getElementById('daikichi-video');
 
