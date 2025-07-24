@@ -256,6 +256,23 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* 動画コンテナ */
+.video-container {
+    width: 50%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* フッター */
 .footer {
     background: #f8f9fa;
@@ -335,11 +352,14 @@ body {
     
     .result-actions {
         flex-direction: column;
+        margin-top: 0.5rem;
     }
     
     .video-container {
-        margin-top: 1rem;
-        padding: 0.8rem;
+        width: 60%;
+        max-width: 250px;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
     }
 }
 
