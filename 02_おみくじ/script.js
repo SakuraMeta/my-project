@@ -122,7 +122,7 @@ function showLoading() {
 // おみくじ結果生成
 function generateFortune() {
     const levels = Object.keys(fortuneData);
-    const weights = [15, 25, 25, 20, 10, 5]; // 大吉から凶までの重み
+    const weights = [20, 25, 25, 15, 10, 5]; // 大吉から凶までの重み
     
     // 重み付きランダム選択
     const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
