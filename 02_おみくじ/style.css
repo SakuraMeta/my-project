@@ -280,7 +280,7 @@ body {
 }
 
 /* レスポンシブデザイン */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .container {
         width: 95%;
         margin: 1rem;
@@ -294,11 +294,30 @@ body {
         padding: 1.5rem;
     }
     
+    .fortune-level {
+        font-size: 2rem;
+    }
+    
+    .draw-button {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+    
+    .action-button {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
     .fortune-details {
         grid-template-columns: 1fr;
     }
     
     .result-actions {
         flex-direction: column;
+    }
+    
+    .video-container {
+        margin-top: 1rem;
+        padding: 0.8rem;
     }
 }

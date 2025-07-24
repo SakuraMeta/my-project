@@ -75,6 +75,8 @@ const resultActions = document.getElementById('resultActions');
 const resetButton = document.getElementById('resetButton');
 const shareButton = document.getElementById('shareButton');
 const omikujiBox = document.getElementById('omikujiBox');
+const videoContainer = document.getElementById('videoContainer');
+const daikichiVideo = document.getElementById('daikichi-video');
 
 // 現在の結果を保存
 let currentResult = null;
@@ -165,6 +167,13 @@ function showResult(result) {
             </div>
         </div>
     `;
+    
+    // 大吉の場合は動画を表示
+    if (result.level === '大吉') {
+        showDaikichiVideo();
+    } else {
+        hideDaikichiVideo();
+    }
 }
 
 // 初期状態に戻す
@@ -178,6 +187,28 @@ function resetOmikuji() {
     
     resultActions.style.display = 'none';
     currentResult = null;
+    drawButton.disabled = false;
+    
+    // 動画を非表示にする
+    hideDaikichiVideo();
+}
+
+// 大吉時の動画を表示
+function showDaikichiVideo() {
+    videoContainer.style.display = 'block';
+    // 動画を最初から再生
+    daikichiVideo.currentTime = 0;
+    daikichiVideo.play().catch(error => {
+        console.log('動画の自動再生に失敗しました:', error);
+        // 自動再生に失敗した場合は、ユーザーの操作を待つ
+    });
+}
+
+// 大吉時の動画を非表示
+function hideDaikichiVideo() {
+    videoContainer.style.display = 'none';
+    daikichiVideo.pause();
+    daikichiVideo.currentTime = 0;
 }
 
 // 結果をシェア
