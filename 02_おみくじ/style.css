@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-    width: 800px;
-    height: 600px;
+    width: 1000px;
+    height: 800px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
@@ -60,8 +60,8 @@ body {
     padding: 2rem;
     margin: 1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 700px;
-    height: 300px;
+    width: 900px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,17 +338,17 @@ body {
 }
 
 /* 固定サイズ用レスポンシブデザイン */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .container {
         width: 90vw;
-        height: 80vh;
-        max-width: 700px;
-        max-height: 500px;
+        height: 85vh;
+        max-width: 900px;
+        max-height: 700px;
     }
     
     .omikuji-box {
         width: calc(100% - 2rem);
-        height: 250px;
+        height: 400px;
         margin: 0.5rem;
         padding: 1.5rem;
     }
@@ -374,16 +374,16 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .container {
         width: 95vw;
-        height: 75vh;
-        max-width: 450px;
-        max-height: 450px;
+        height: 80vh;
+        max-width: 550px;
+        max-height: 600px;
     }
     
     .omikuji-box {
-        height: 200px;
+        height: 300px;
         padding: 1rem;
     }
     
